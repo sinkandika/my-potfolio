@@ -83,89 +83,6 @@ body {
     padding-left: 120px;
 }
 
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px); /* Start from left */
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0); /* End at original position */
-    }
-}
-
-@media (max-width: 768px) {
-
-    .navbar {
-        width: 100vw;
-    }
-    
-    .nav-links {
-        gap: 1rem;
-    }
-
-    .hero-section {
-        height: 100%;
-        padding-bottom: 5rem;
-        background-color: white;
-        padding-top: 5rem;
-    }
-
-    .hero-image {
-        left: 0rem;
-    }
-
-    .photo-container{
-        position: relative; /*IS A MUST IF YOU WANT TO MOVE THE CONTENT INSIDE*/
-        right: 5rem;
-    }
-
-    .dikaphoto img {
-        position: relative; /* Change from absolute */
-        left: 0;
-        transform: none; /* Reset any transformations */
-    }
-
-    .circle1, .circle2, .circle3 {
-        opacity: 1 !important;
-    }
-
-}
-
-@media (max-width: 1024px) {  /* Adjust for smaller screens */
-    .hero-section {
-        flex-direction: column;  /* Stack text and image */
-        text-align: center;
-        height: auto;  /* Allow flexible height */
-    }
-
-    .hero-container {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        padding-top: 100px;
-    }
-
-    .hero-content {
-        padding-left: 0; /* Remove left padding */
-        margin-bottom: 20px; /* Add spacing between text & image */
-        padding: 0;
-        text-align: left;
-    }
-
-    .hero-image {
-        transform: scale(0.8);
-        padding-right: 100px;
-        padding: 0;
-    }
-
-    .circle1, .circle2, .circle3 {
-        opacity: 0;
-    }
-}
-
 .hero-content{
     animation: fadeInLeft 1s ease-out forwards;
     animation-delay: 0.3s;
@@ -173,20 +90,6 @@ body {
     align-content: center;
     padding: 0px;
     margin: 0;
-}
-
-
-@media (min-width: 1920px) {
-    .hero-section{
-        height: 1000px;
-    }
-    .hero-content {
-        margin-left: 100px;
-    }
-
-    .photo-container  {
-        position: relative;
-    }
 }
 
 h1 {
@@ -267,14 +170,6 @@ h1 {
     height: 400px; /* Adjust as needed */
 }
 
-@media (min-width: 1920px) {
-    .photo-container {
-        padding: 0;
-        margin: 0;
-    }
-}
-
-
 /* 🔹 Base styles for all images */
 .photo-container img {
     position: absolute;
@@ -318,6 +213,154 @@ h1 {
     animation-delay: 0.9s;
 }
 
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px); /* Start from left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+@media (max-width: 425px) {
+
+    .navbar {
+        display: flex;
+        width: 100vw;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+        padding: 0;
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        gap: 5vh;
+        padding: 0;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-links a {
+        padding: 0;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .logo-link {
+        display: flex;
+        width: 15%;
+        padding: 0;
+        margin-left: auto;
+        justify-content: center;
+    }
+
+    .logo {
+        padding: 0;
+        width: 50%;
+        height: auto;
+    }
+
+    .hero-section {
+        width: 100vw;
+        height: auto;
+        background-color: white;
+    }
+
+    .hero-container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .hero-content {
+        scale: 80%;
+    }
+
+    .hero-image {
+        display: flex;
+        position: relative;
+        left: 0rem;
+        scale: 75%;
+        background-color: white;
+        bottom: 8vh;
+    }
+
+    .photo-container{
+        position: relative; /*IS A MUST IF YOU WANT TO MOVE THE CONTENT INSIDE*/
+        right: 5rem;
+    }
+
+    .dikaphoto img {
+        position: relative; /* Change from absolute */
+        left: 0;
+        transform: none; /* Reset any transformations */
+    }
+
+    .circle1, .circle2, .circle3 {
+        opacity: 1 !important;
+    }
+
+}
+
+@media (max-width: 1024px) {  /* Adjust for smaller screens */
+    .hero-section {
+        flex-direction: column;  /* Stack text and image */
+        text-align: center;
+        height: auto;  /* Allow flexible height */
+    }
+
+    .hero-container {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding-top: 100px;
+    }
+
+    .hero-content {
+        padding-left: 0; /* Remove left padding */
+        margin-bottom: 20px; /* Add spacing between text & image */
+        padding: 0;
+        text-align: left;
+    }
+
+    .hero-image {
+        transform: scale(0.8);
+        padding-right: 100px;
+        padding: 0;
+    }
+
+    .circle1, .circle2, .circle3 {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    .hero-section{
+        height: 1000px;
+    }
+    .hero-content {
+        margin-left: 100px;
+    }
+
+    .photo-container  {
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+
 .about-me-section {         /*ABOUT ME SECTION*/
     background-color: white;
     display: flex;
@@ -359,27 +402,6 @@ h1 {
     padding-bottom: 100px;
 }
 
-@media (max-width: 1024px) {  /* Adjust this value if needed */
-    .about-me-container {
-        flex-direction: column;
-        align-items: center; /* Center the content */
-        text-align: center; /* Center text */
-        height: auto;
-        padding: 0;
-    }
-
-    .about-me-text {
-        margin-top: 20px;
-    }
-
-    .im-good-container {
-        margin-bottom: 100px;
-    }
-
-    .skill-text {
-        max-width: 100%;
-    }
-}
 
 .about-me-text {
     max-width: 560px;
@@ -450,6 +472,64 @@ h3 {
 .design-skill:nth-child(7) { background-color: #424A7C; color: #ffffff; } /* GIMP */
 .design-skill:nth-child(8) { background-color: #D0EAF4; color: #2F3142; } /* Inkscape */
 .design-skill:nth-child(9) { background-color: #F2E98F; color: #2F3142; } /* CLIP Studio Paint */
+
+@media (max-width: 425px) {
+
+    .about-me-section{
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+    .about-me-container {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-text {
+        background-color: white;
+        width: 100%;
+        margin:0;
+        padding: 0;
+        scale: 85%;
+    }
+
+    .im-good-container {
+        width: 100%;
+        margin:0;
+        padding: 0;
+        background-color: white;
+        scale: 85%;
+    }
+
+    .skill-text {
+        padding: 0;
+    }
+}
+
+@media (max-width: 1024px) {  /* Adjust this value if needed */
+    .about-me-container {
+        flex-direction: column;
+        align-items: center; /* Center the content */
+        text-align: center; /* Center text */
+        height: auto;
+        padding: 0;
+    }
+
+    .about-me-text {
+        margin-top: 20px;
+    }
+
+    .im-good-container {
+        margin-bottom: 100px;
+    }
+
+    .skill-text {
+        max-width: 100%;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------*/
 
 .my-portfolio-section {
     background-color: white;
@@ -592,6 +672,41 @@ h3 {
     color: #4ED189;
 }
 
+@media (max-width: 425px) {
+
+    .my-portfolio-section{
+        background-color: white;
+        height: auto;
+    }
+
+    .my-portfolio-title {
+        scale: 85%;
+    }
+
+    .my-portfolio-container, .my-portfolio-container2,.my-portfolio-container3,
+    .my-portfolio-container4, .my-portfolio-container5 {
+        flex-direction: column;
+        scale: 85%;
+        padding: 0;
+        position: relative;
+        margin: 0;
+        padding-bottom: 0vh !important;
+        padding-top: 0vh !important;
+    }
+
+    .portfolio-image {
+        position: relative;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    .portfolio-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media (max-width: 1024px){
     .my-portfolio-title{
         text-align: center;
@@ -599,14 +714,14 @@ h3 {
         padding-left: 0;
     }
 
-    .my-portfolio-container{
+    .my-portfolio-container, .my-portfolio-container2, .my-portfolio-container3,
+    .my-portfolio-container4, .my-portfolio-container5 {
         align-items: center;  /* Make all center*/
         flex-direction: column-reverse;
         flex-wrap: wrap-reverse;
         margin: 0;
-        padding: 0;
-        padding-bottom: 100px;
-        padding-top: 100px;
+        padding-bottom: 10vh;
+        padding-top: 10vh;
     }
 
     .portfolio-image{
@@ -629,48 +744,9 @@ h3 {
         padding-left: 0px;
         padding-top: 60px;
     }
-
-    .my-portfolio-container2 {
-        align-items: center;  /* Make all center*/
-        flex-direction: column-reverse;
-        flex-wrap: wrap-reverse;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 100px;
-        padding-top: 100px;
-    }
-
-    .my-portfolio-container3 {
-        align-items: center;  /* Make all center*/
-        flex-direction: column-reverse;
-        flex-wrap: wrap-reverse;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 100px;
-        padding-top: 100px;
-    }
-
-    .my-portfolio-container4 {
-        align-items: center;  /* Make all center*/
-        flex-direction: column-reverse;
-        flex-wrap: wrap-reverse;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 100px;
-        padding-top: 100px;
-    }
-
-    .my-portfolio-container5 {
-        align-items: center;  /* Make all center*/
-        flex-direction: column-reverse;
-        flex-wrap: wrap-reverse;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 100px;
-        padding-top: 100px;
-    }
-
 }
+
+/*------------------------------------------------------------------------------------------------*/
 
 .contact-section {
     background-color: white;
@@ -782,6 +858,49 @@ h3 {
     text-decoration: underline;
 }
 
+@media (max-width: 425px) {
+    .contact-section {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-title {
+        scale: 85%;
+    }
+
+
+    .contact-form {
+        scale: 85%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        position: relative;
+        bottom: 5vh;
+    }
+
+    .contact-form input, .contact-form textarea{
+        max-width: 50vw;
+    }
+
+    .contact-form button {
+        width: 50%;
+    }
+
+    .contact-info {
+        scale: 85%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 5vh;
+    }
+}
+
 @media (max-width: 768px) {
 
     .contact-section {
@@ -811,7 +930,7 @@ h3 {
     .contact-form input,
     .contact-form textarea {
         width: 100%; /* Ensures input fields take full width */
-        max-width: 500px; /* Avoids extra-wide inputs */
+        max-width: 90vw; /* Avoids extra-wide inputs */
     }
 
     .contact-info {
@@ -842,6 +961,6 @@ h3 {
 
     .contact-info {
         padding-left: 0;
-        padding-top: 50px;
+        padding-top: 5vh;
     }
 }
