@@ -355,6 +355,7 @@ h1 {
         padding: 0;
         margin: 0;
     }
+
 }
 
 
@@ -620,6 +621,23 @@ h3 {
     color: #E5768B;
 }
 
+.my-portfolio-container6 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 100px;
+}
+
+.text-title6 {
+    font-family: poppins;
+    font-size: 38px;
+    margin: 0;
+    color: #7B6FCE;
+}
+
 .my-portfolio-container3 {
     display: flex;
     flex-wrap: wrap;
@@ -719,7 +737,7 @@ h3 {
     }
 
     .my-portfolio-container, .my-portfolio-container2, .my-portfolio-container3,
-    .my-portfolio-container4, .my-portfolio-container5 {
+    .my-portfolio-container4, .my-portfolio-container5, .my-portfolio-container6 {
         align-items: center;  /* Make all center*/
         flex-direction: column-reverse;
         flex-wrap: wrap-reverse;
@@ -960,11 +978,11 @@ h3 {
     }
     .contact-form {
         align-content: center;
-        padding-left: 0;
+        padding-left: 5rem;
     }
 
     .contact-info {
-        padding-left: 0;
+        padding-left: 5rem;
         padding-top: 5vh;
     }
 }
