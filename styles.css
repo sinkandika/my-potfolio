@@ -701,7 +701,7 @@ h3 {
     }
 
     .my-portfolio-container, .my-portfolio-container2,.my-portfolio-container3,
-    .my-portfolio-container4, .my-portfolio-container5 {
+    .my-portfolio-container4, .my-portfolio-container5, .my-portfolio-container6 {
         flex-direction: column;
         scale: 85%;
         padding: 0;
@@ -724,7 +724,7 @@ h3 {
     }
 
     .text-title, .text-title2, .text-title3,
-    .text-title4, .text-title5 {
+    .text-title4, .text-title5, .text-title6{
         font-size: 2.2rem;
     }
 }
@@ -978,11 +978,11 @@ h3 {
     }
     .contact-form {
         align-content: center;
-        padding-left: 5rem;
+        padding-left: 0;
     }
 
     .contact-info {
-        padding-left: 5rem;
+        padding-left: 0;
         padding-top: 5vh;
     }
 }
