@@ -601,7 +601,7 @@ h3 {
     font-family: poppins;
     font-size: 38px;
     margin: 0;
-    color: #E5768B;
+    color: #0DB29A;
 }
 
 .my-portfolio-container1 {
@@ -743,7 +743,7 @@ h3 {
 
     .text-title1, .text-title2, .text-title3,
     .text-title4, .text-title5, .text-title6,
-    .text-title7{
+    .text-title7 {
         font-size: 2.2rem;
     }
 }
