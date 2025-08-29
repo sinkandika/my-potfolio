@@ -723,6 +723,76 @@ h3 {
     color: #4ED189;
 }
 
+.catikers-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: inter, sans-serif;
+    font-size: 18px;
+    color: #0DB29A;  /* match your accent color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.catikers-link:hover {
+    color: #2F3142; /* dark on hover */
+}
+
+.fip-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: inter, sans-serif;
+    font-size: 18px;
+    color: #6974E2;  /* match your accent color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.fip-link:hover {
+    color: #2F3142; /* dark on hover */
+}
+
+.hiveplan-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: inter, sans-serif;
+    font-size: 18px;
+    color: #EDA20A;  /* match your accent color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hiveplan-link:hover {
+    color: #2F3142; /* dark on hover */
+}
+
+.pinterest-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: inter, sans-serif;
+    font-size: 18px;
+    color: #ED654F;  /* match your accent color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.pinterest-link:hover {
+    color: #2F3142; /* dark on hover */
+}
+
+.freepik-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: inter, sans-serif;
+    font-size: 18px;
+    color: #4ED189;  /* match your accent color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.freepik-link:hover {
+    color: #2F3142; /* dark on hover */
+}
+
 @media (max-width: 425px) {
 
     .my-portfolio-section{
