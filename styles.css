@@ -655,6 +655,30 @@ h3 {
     color: #EDA20A;
 }
 
+.my-portfolio-container9 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 100px;
+}
+
+.text-title9 {
+    font-family: poppins;
+    font-size: 38px;
+    margin: 0;
+    color: #597F40;
+}
+
+.text-progress9 {
+    margin-top: 10px;
+    font-family: inter, sans-serif;
+    font-size: 18px;
+    color: #2F3142;
+}
+
 .my-portfolio-container6 {
     display: flex;
     flex-wrap: wrap;
@@ -806,7 +830,7 @@ h3 {
 
     .my-portfolio-container1, .my-portfolio-container2,.my-portfolio-container3,
     .my-portfolio-container4, .my-portfolio-container5, .my-portfolio-container6,
-    .my-portfolio-container7, .my-portfolio-container8 {
+    .my-portfolio-container7, .my-portfolio-container8, .my-portfolio-container9 {
         flex-direction: column;
         scale: 85%;
         padding: 0;
@@ -830,7 +854,7 @@ h3 {
 
     .text-title1, .text-title2, .text-title3,
     .text-title4, .text-title5, .text-title6,
-    .text-title7, .text-title8 {
+    .text-title7, .text-title8, .text-title9 {
         font-size: 2.2rem;
     }
 }
@@ -844,7 +868,7 @@ h3 {
 
     .my-portfolio-container1, .my-portfolio-container2, .my-portfolio-container3,
     .my-portfolio-container4, .my-portfolio-container5, .my-portfolio-container6,
-    .my-portfolio-container7, .my-portfolio-container8 {
+    .my-portfolio-container7, .my-portfolio-container8, .my-portfolio-container9 {
         align-items: center;  /* Make all center*/
         flex-direction: column-reverse;
         flex-wrap: wrap-reverse;
