@@ -28,28 +28,28 @@ body {
 }
 
 .logo {
-    height: 40px;   /* Adjust logo size */
+    height: 40px;   
     padding-left: 40px;
     padding-bottom: 15px;
 }
 
-.nav-links {        /* Navigation menu Links */
+.nav-links {        
     list-style: none;
     display: flex;
     font-family: poppins;
     align-items: center;
     font-weight: normal;
     padding-bottom: 20px;
-    gap: 20px;          /* Space between links */
+    gap: 20px;       
 }
 
 
-.nav-links li {         /*style the menu*/
+.nav-links li {        
     display: inline;
 }
 
 
-.nav-links a {          /* style when it's clicked*/
+.nav-links a {         
     text-decoration: none;
     font-size: 15px;
     color: #2F3142;
@@ -58,7 +58,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ED654F;     /* Highlight color on hover */
+    color: #ED654F; 
 }
 
 /*CONTENT*/
@@ -66,10 +66,10 @@ body {
     height: auto; 
     width: 100%;
     align-content: center;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
     background-color: white;
     position: relative;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow at the bottom combined with position= and z-index= */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 100;
 }
 
@@ -77,7 +77,7 @@ body {
     margin: 0;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between; /* Space between text & image */
+    justify-content: space-between; 
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 120px;
@@ -165,20 +165,20 @@ h1 {
 }
 
 .photo-container {
-    justify-content: center; /* Ensures the image stays centered inside its container */
-    width: 400px; /* Adjust as needed */
-    height: 400px; /* Adjust as needed */
+    justify-content: center; 
+    width: 400px; 
+    height: 400px; 
 }
 
-/* 🔹 Base styles for all images */
+
 .photo-container img {
     position: absolute;
-    width: 100%;  /* Ensures all images match the container size */
+    width: 100%;  
     height: 100%;
-    border-radius: 50%;  /* Keep circular shape */
+    border-radius: 50%;  
 }
 
-/* 🔹 dikaphoto (on top) */
+
 .dikaphoto img {
     z-index: 4;
     opacity: 0;
@@ -186,7 +186,7 @@ h1 {
     animation-delay: 0.5s;
 }
 
-/* 🔹 circle1 (right behind dikaphoto) */
+
 .circle1 img {
     z-index: 3;
     opacity: 0;
@@ -195,7 +195,7 @@ h1 {
     animation-delay: 0.7s;
 }
 
-/* 🔹 circle2 (behind circle1) */
+
 .circle2 img {
     z-index: 2;
     opacity: 0;
@@ -204,7 +204,7 @@ h1 {
     animation-delay: 0.8s;
 }
 
-/* 🔹 circle3 (behind circle2) */
+
 .circle3 img {
     z-index: 1;
     opacity: 0;
@@ -216,15 +216,15 @@ h1 {
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translateX(-50px); /* Start from left */
+        transform: translateX(-50px); 
     }
     to {
         opacity: 1;
-        transform: translateX(0); /* End at original position */
+        transform: translateX(0); 
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
 
     .navbar {
         display: flex;
@@ -289,31 +289,34 @@ h1 {
         scale: 75%;
         background-color: white;
         bottom: 8vh;
+        opacity: 0;
     }
 
     .photo-container{
-        position: relative; /*IS A MUST IF YOU WANT TO MOVE THE CONTENT INSIDE*/
+        position: relative; 
         right: 5rem;
+        opacity: 0;
     }
 
     .dikaphoto img {
-        position: relative; /* Change from absolute */
+        position: relative; 
         left: 0;
-        transform: none; /* Reset any transformations */
-    }
+        transform: none; 
 
     .circle1, .circle2, .circle3 {
         opacity: 1 !important;
     }
 
+    }
 }
 
-@media (max-width: 1024px) {  /* Adjust for smaller screens */
+@media (max-width: 1280px) {  
     .hero-section {
-        flex-direction: column;  /* Stack text and image */
+        flex-direction: column;  
         text-align: center;
-        height: auto;  /* Allow flexible height */
+        height: auto; 
     }
+
 
     .hero-container {
         padding: 0;
@@ -325,8 +328,8 @@ h1 {
     }
 
     .hero-content {
-        padding-left: 0; /* Remove left padding */
-        margin-bottom: 20px; /* Add spacing between text & image */
+        padding-left: 0; 
+        margin-bottom: 20px;
         padding: 0;
         text-align: left;
     }
@@ -369,8 +372,8 @@ h1 {
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative; /* Ensure box-shadow is visible */
-    z-index: 50; /* Make sure it stays above other sections */
+    position: relative; 
+    z-index: 50; 
 }
 
 .about-me-section.visible {
@@ -396,7 +399,7 @@ h1 {
     padding-top: 50px;
     justify-content: space-between;
     align-content: center;
-    flex-wrap: wrap; /* Allow items to wrap when the screen is smaller */
+    flex-wrap: wrap; 
     padding-left: 120px;
     padding-right: 160px;
     padding-bottom: 100px;
@@ -507,11 +510,11 @@ h3 {
     }
 }
 
-@media (max-width: 1024px) {  /* Adjust this value if needed */
+@media (max-width: 1024px) { 
     .about-me-container {
         flex-direction: column;
-        align-items: center; /* Center the content */
-        text-align: center; /* Center text */
+        align-items: center;
+        text-align: center; 
         height: auto;
         padding: 0;
     }
@@ -535,17 +538,17 @@ h3 {
     background-color: white;
     width: 100%;
     height: auto;
-    opacity: 0; /* Hide initially */
-    transform: translateY(50px); /* Move down slightly */
+    opacity: 0;
+    transform: translateY(50px); 
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    position: relative; /* Ensure layering */
+    position: relative; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 49;
 }
 
 .my-portfolio-section.visible {
     opacity: 1;
-    transform: translateY(0); /* Bring back to normal position */
+    transform: translateY(0); 
 }
 
 .my-portfolio-title {
@@ -579,7 +582,7 @@ h3 {
 }
 
 .portfolio-image {
-    padding-right: 180px;
+    padding-right: 100px;
 }
 
 .portfolio-image img {
@@ -752,13 +755,13 @@ h3 {
     margin-top: 10px;
     font-family: inter, sans-serif;
     font-size: 18px;
-    color: #0DB29A;  /* match your accent color */
+    color: #0DB29A; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .catikers-link:hover {
-    color: #2F3142; /* dark on hover */
+    color: #2F3142; 
 }
 
 .fip-link {
@@ -766,13 +769,13 @@ h3 {
     margin-top: 10px;
     font-family: inter, sans-serif;
     font-size: 18px;
-    color: #6974E2;  /* match your accent color */
+    color: #6974E2;  
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .fip-link:hover {
-    color: #2F3142; /* dark on hover */
+    color: #2F3142;
 }
 
 .hiveplan-link {
@@ -780,13 +783,13 @@ h3 {
     margin-top: 10px;
     font-family: inter, sans-serif;
     font-size: 18px;
-    color: #EDA20A;  /* match your accent color */
+    color: #EDA20A;  
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .hiveplan-link:hover {
-    color: #2F3142; /* dark on hover */
+    color: #2F3142; 
 }
 
 .pinterest-link {
@@ -794,13 +797,13 @@ h3 {
     margin-top: 10px;
     font-family: inter, sans-serif;
     font-size: 18px;
-    color: #ED654F;  /* match your accent color */
+    color: #ED654F;  
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .pinterest-link:hover {
-    color: #2F3142; /* dark on hover */
+    color: #2F3142; 
 }
 
 .freepik-link {
@@ -808,13 +811,13 @@ h3 {
     margin-top: 10px;
     font-family: inter, sans-serif;
     font-size: 18px;
-    color: #4ED189;  /* match your accent color */
+    color: #4ED189; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .freepik-link:hover {
-    color: #2F3142; /* dark on hover */
+    color: #2F3142; 
 }
 
 @media (max-width: 425px) {
@@ -859,7 +862,7 @@ h3 {
     }
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1280px){
     .my-portfolio-title{
         text-align: center;
         margin: 0;
@@ -869,7 +872,7 @@ h3 {
     .my-portfolio-container1, .my-portfolio-container2, .my-portfolio-container3,
     .my-portfolio-container4, .my-portfolio-container5, .my-portfolio-container6,
     .my-portfolio-container7, .my-portfolio-container8, .my-portfolio-container9 {
-        align-items: center;  /* Make all center*/
+        align-items: center; 
         flex-direction: column-reverse;
         flex-wrap: wrap-reverse;
         margin: 0;
@@ -878,22 +881,22 @@ h3 {
     }
 
     .portfolio-image{
-        display: flex; /* Enables flexbox */
-        justify-content: center; /* Centers horizontally */
-        align-items: center; /* Centers vertically */
-        width: 100%; /* Ensures full width */
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 100%; 
         padding: 0;
     }
 
     .portfolio-image img {
-        max-width: 100%; /* Prevents overflow */
+        max-width: 100%; 
         height: auto;
         padding: 0;
     }
 
     .portfolio-text{
         text-align: left;
-        max-width: 550px;
+        max-width: 500px;
         padding-left: 0px;
         padding-top: 60px;
     }
@@ -907,15 +910,15 @@ h3 {
     height: auto;
     position: relative;
     z-index: 48;
-    opacity: 0; /* Hide initially */
-    transform: translateY(50px); /* Move down slightly */
+    opacity: 0; 
+    transform: translateY(50px); 
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    position: relative; /* Ensure layering */
+    position: relative; 
 }
 
 .contact-section.visible {
     opacity: 1;
-    transform: translateY(0); /* Bring back to normal position */
+    transform: translateY(0); 
 }
 
 .contact-title {
@@ -938,7 +941,7 @@ h3 {
     padding-top: 100px;
 }
 
-.contact-form { /*contact fill form*/
+.contact-form { 
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -1064,26 +1067,26 @@ h3 {
         display: flex;
         position: relative;
         flex-direction: column;
-        align-items: center; /* Centers everything inside */
+        align-items: center; 
         justify-content: center;
         text-align: center;
         width: 100%;
         padding: 0;
-        margin: 0 auto; /* Ensure it's centered */
+        margin: 0 auto; 
     }
 
     .contact-form {
         width: 100%;
-        max-width: 100rem; /* Ensures it doesn’t get too wide */
+        max-width: 100rem; 
         padding: 0;
-        margin: 0 auto; /* Ensures it's properly centered */
+        margin: 0 auto; 
         padding-top: 2rem;
     }
 
     .contact-form input,
     .contact-form textarea {
-        width: 100%; /* Ensures input fields take full width */
-        max-width: 90vw; /* Avoids extra-wide inputs */
+        width: 100%; 
+        max-width: 90vw; 
     }
 
     .contact-info {
